@@ -5,6 +5,7 @@ def share_pods
 
   # UI
   pod 'SnapKit'
+  pod 'Then'
 
   # RxSwift, Rxcocoa
   pod 'RxSwift', '6.2.0'
