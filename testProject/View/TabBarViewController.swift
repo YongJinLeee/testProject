@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Then
 
 class TabBarViewController: UITabBarController {
     
@@ -19,13 +20,24 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .white
         self.selectedIndex = defalutTabIndex
+        setUI()
          
     }
+}
+
+
+extension TabBarViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func setUI(){
+        
+        self.view.backgroundColor = .white
+        UITabBar.appearance().scrollEdgeAppearance = .init()
+        
+        let tabBar: UITabBar = self.tabBar
+        tabBar.tintColor = UIColor.systemRed
+        tabBar.backgroundColor = UIColor(r: 245, g: 245, b: 245, a: 0.3)
+        tabBar.unselectedItemTintColor  = UIColor.systemGray
         
         // 홈 탭
         let homeNavigationController = UINavigationController()
@@ -35,7 +47,6 @@ class TabBarViewController: UITabBarController {
         homeNavigationController.tabBarItem.title = "홈"
         homeNavigationController.tabBarItem.image = UIImage.init(systemName: "house")
         homeNavigationController.tabBarItem.selectedImage = UIImage.init(systemName: "house.fill")
-        homeNavigationController.tabBarItem.selectedImage?.withTintColor(UIColor.red)
         
         // 좋아요 탭
         let wishListNavigationController = UINavigationController()
@@ -45,15 +56,10 @@ class TabBarViewController: UITabBarController {
         wishListNavigationController.tabBarItem.title = "좋아요"
         wishListNavigationController.tabBarItem.image = UIImage.init(systemName: "heart")
         wishListNavigationController.tabBarItem.selectedImage = UIImage.init(systemName: "heart.fill")
-        wishListNavigationController.tabBarItem.selectedImage?.withTintColor(UIColor.red)
         
         let viewControllers = [homeNavigationController, wishListNavigationController] // array index 대로 탭 표시됨
         self.setViewControllers(viewControllers, animated: true)
         
     }
-}
-
-
-extension TabBarViewController {
     
 }
