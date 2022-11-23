@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C76FEA38E2880D860B6F566 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A22D4C7CF4CE2E8EC75DB /* Pods_testProject.framework */; };
+		B21027EA292E2D2800A9F957 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027E9292E2D2700A9F957 /* UIColor+Extension.swift */; };
 		B27F5496292C6A9A00EC240B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5495292C6A9A00EC240B /* AppDelegate.swift */; };
 		B27F5498292C6A9A00EC240B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5497292C6A9A00EC240B /* SceneDelegate.swift */; };
 		B27F549A292C6A9A00EC240B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5499292C6A9A00EC240B /* HomeViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		0B625EF1CE164D319B944BE9 /* Pods-testProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.release.xcconfig"; path = "Target Support Files/Pods-testProject/Pods-testProject.release.xcconfig"; sourceTree = "<group>"; };
 		35CE27F28ADA91EDE2C22B5A /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B21027E9292E2D2700A9F957 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B22A22D4C7CF4CE2E8EC75DB /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27F5492292C6A9A00EC240B /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27F5495292C6A9A00EC240B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B286CADF292C904C0059D373 /* KeyedDecodingContainer+Extension.swift */,
+				B21027E9292E2D2700A9F957 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				B286CAE0292C904C0059D373 /* KeyedDecodingContainer+Extension.swift in Sources */,
 				B2AC080F292DE49B008B4B62 /* TabBarViewController.swift in Sources */,
 				B286CAE2292C91770059D373 /* HomeBannerModel.swift in Sources */,
+				B21027EA292E2D2800A9F957 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
