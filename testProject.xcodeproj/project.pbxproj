@@ -15,6 +15,7 @@
 		B27F54A2292C6A9B00EC240B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27F54A0292C6A9B00EC240B /* LaunchScreen.storyboard */; };
 		B286CAE0292C904C0059D373 /* KeyedDecodingContainer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286CADF292C904C0059D373 /* KeyedDecodingContainer+Extension.swift */; };
 		B286CAE2292C91770059D373 /* HomeBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286CAE1292C91770059D373 /* HomeBannerModel.swift */; };
+		B2AC080F292DE49B008B4B62 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B27F54A3292C6A9B00EC240B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B286CADF292C904C0059D373 /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
 		B286CAE1292C91770059D373 /* HomeBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerModel.swift; sourceTree = "<group>"; };
+		B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B27F5499292C6A9A00EC240B /* HomeViewController.swift */,
+				B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				B27F5496292C6A9A00EC240B /* AppDelegate.swift in Sources */,
 				B27F5498292C6A9A00EC240B /* SceneDelegate.swift in Sources */,
 				B286CAE0292C904C0059D373 /* KeyedDecodingContainer+Extension.swift in Sources */,
+				B2AC080F292DE49B008B4B62 /* TabBarViewController.swift in Sources */,
 				B286CAE2292C91770059D373 /* HomeBannerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
