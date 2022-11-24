@@ -39,3 +39,9 @@ struct Good: Codable {
         case price
     }
 }
+
+struct HomeModel {
+    
+    var lastId: Int = 0
+    var wishItemArr: [Good] = []
+}
