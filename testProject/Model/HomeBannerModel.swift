@@ -8,6 +8,7 @@
 import UIKit
 
 struct HomeBannerModel {
-
+    
+    var bannerInfoArr: [Banner]
 
 }
