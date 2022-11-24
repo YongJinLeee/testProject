@@ -10,6 +10,9 @@
 		6C76FEA38E2880D860B6F566 /* Pods_testProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A22D4C7CF4CE2E8EC75DB /* Pods_testProject.framework */; };
 		B21027EA292E2D2800A9F957 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027E9292E2D2700A9F957 /* UIColor+Extension.swift */; };
 		B21027ED292EF4B900A9F957 /* ProjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027EC292EF4B900A9F957 /* ProjectAPI.swift */; };
+		B21027F0292F0FD900A9F957 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027EF292F0FD900A9F957 /* APIEndPoint.swift */; };
+		B21027F2292F113B00A9F957 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027F1292F113B00A9F957 /* HomeModel.swift */; };
+		B21027F4292F42D200A9F957 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21027F3292F42D200A9F957 /* NetworkAPI.swift */; };
 		B27F5496292C6A9A00EC240B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5495292C6A9A00EC240B /* AppDelegate.swift */; };
 		B27F5498292C6A9A00EC240B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5497292C6A9A00EC240B /* SceneDelegate.swift */; };
 		B27F549A292C6A9A00EC240B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F5499292C6A9A00EC240B /* HomeViewController.swift */; };
@@ -26,6 +29,9 @@
 		35CE27F28ADA91EDE2C22B5A /* Pods-testProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProject.debug.xcconfig"; path = "Target Support Files/Pods-testProject/Pods-testProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B21027E9292E2D2700A9F957 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B21027EC292EF4B900A9F957 /* ProjectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAPI.swift; sourceTree = "<group>"; };
+		B21027EF292F0FD900A9F957 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = SOURCE_ROOT; };
+		B21027F1292F113B00A9F957 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		B21027F3292F42D200A9F957 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		B22A22D4C7CF4CE2E8EC75DB /* Pods_testProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27F5492292C6A9A00EC240B /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27F5495292C6A9A00EC240B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				B21027EC292EF4B900A9F957 /* ProjectAPI.swift */,
+				B21027F3292F42D200A9F957 /* NetworkAPI.swift */,
 			);
 			path = Moya;
+			sourceTree = "<group>";
+		};
+		B21027EE292F0FAE00A9F957 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B21027EF292F0FD900A9F957 /* APIEndPoint.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		B27F5489292C6A9A00EC240B = {
@@ -100,6 +115,7 @@
 			children = (
 				B27F5495292C6A9A00EC240B /* AppDelegate.swift */,
 				B27F5497292C6A9A00EC240B /* SceneDelegate.swift */,
+				B21027EE292F0FAE00A9F957 /* Config */,
 				B286CADC292C8A1A0059D373 /* Model */,
 				B286CADD292C8A360059D373 /* View */,
 				B286CADB292C8A080059D373 /* VeiwModel */,
@@ -124,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B286CAE1292C91770059D373 /* HomeBannerModel.swift */,
+				B21027F1292F113B00A9F957 /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27F549A292C6A9A00EC240B /* HomeViewController.swift in Sources */,
+				B21027F0292F0FD900A9F957 /* APIEndPoint.swift in Sources */,
+				B21027F2292F113B00A9F957 /* HomeModel.swift in Sources */,
 				B2AC0811292E0FB4008B4B62 /* WishListViewController.swift in Sources */,
 				B27F5496292C6A9A00EC240B /* AppDelegate.swift in Sources */,
 				B21027ED292EF4B900A9F957 /* ProjectAPI.swift in Sources */,
@@ -270,6 +289,7 @@
 				B2AC080F292DE49B008B4B62 /* TabBarViewController.swift in Sources */,
 				B286CAE2292C91770059D373 /* HomeBannerModel.swift in Sources */,
 				B21027EA292E2D2800A9F957 /* UIColor+Extension.swift in Sources */,
+				B21027F4292F42D200A9F957 /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
