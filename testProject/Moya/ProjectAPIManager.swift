@@ -7,6 +7,7 @@
 
 import Foundation
 import Moya
+import Alamofire
 
 final class ReloadIgnoringLocalCacheDataCachePolicyPlugin: PluginType {
     public func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
@@ -26,10 +27,9 @@ public class ProjectAPIManager: NSObject {
     private override init() {
         projectProvider = MoyaProvider<ProjectAPI>(plugins: [ReloadIgnoringLocalCacheDataCachePolicyPlugin()])
     }
+    // MARK: Moya Ver.
     
     // MARK: Initialization API
-    
-    
     static func initialization(onSuccess success: @escaping (Initializing) -> Void, onFailure failure: @escaping failureClosure) {
 
         ProjectAPIManager().request(api: ProjectAPI.initialization, responseObject: Initializing.self, onSuccess: { (initDataDTO, data) in
@@ -41,10 +41,9 @@ public class ProjectAPIManager: NSObject {
     }
     
     // MARK: Pagination API
-    
     static func pagination(onSuccess success: @escaping (Pagination) -> Void, onFailure failure: @escaping failureClosure) {
         
-        let parameters: [String : Any] = ["lastId" : 0]
+        let parameters: [String : Any] = ["lastId" : HomeModel.init().lastId]
         
         ProjectAPIManager().request(api: ProjectAPI.pagination(params: parameters), responseObject: Pagination.self, onSuccess: { (pageInfoDTO, data) in
             success(pageInfoDTO)
@@ -52,8 +51,8 @@ public class ProjectAPIManager: NSObject {
         }, onFailure: { (error) in
                 failure(error) })
     }
-    
 }
+
 
 extension ProjectAPIManager {
     
@@ -82,4 +81,25 @@ extension ProjectAPIManager {
         }
     }
     
+    // MARK: Alamofire ver.
+    static func getInitialData(complete: @escaping (Result<Initializing, AFError>) -> Void) {
+        
+        let url = URL(string: "http://d2bab9i9pr8lds.cloudfront.net/api/home")!
+        let headers: HTTPHeaders = ["Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json"]
+        
+        let call = AF.request(url, method: .get, encoding: URLEncoding.default, headers: headers)
+        
+        call.responseDecodable(of: Initializing.self) { responseData in
+            
+            switch responseData.result {
+                
+            case .success((let initData)):
+                
+                complete(.success(initData))
+                
+            case .failure(let error):
+                complete(.failure(error))
+            }
+        }
+    }
 }
