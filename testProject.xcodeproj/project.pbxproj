@@ -27,6 +27,7 @@
 		B2AC080F292DE49B008B4B62 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */; };
 		B2AC0811292E0FB4008B4B62 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC0810292E0FB4008B4B62 /* WishListViewController.swift */; };
 		B2AC0812292E1576008B4B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27F54A0292C6A9B00EC240B /* LaunchScreen.storyboard */; };
+		B2EE9A072932324A00EBFAA8 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE9A062932324A00EBFAA8 /* HomeTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B286CAE1292C91770059D373 /* HomeBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerModel.swift; sourceTree = "<group>"; };
 		B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B2AC0810292E0FB4008B4B62 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		B2EE9A062932324A00EBFAA8 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B27F5499292C6A9A00EC240B /* HomeViewController.swift */,
+				B2EE9A062932324A00EBFAA8 /* HomeTabViewController.swift */,
 				B2AC0810292E0FB4008B4B62 /* WishListViewController.swift */,
 				B2AC080E292DE49B008B4B62 /* TabBarViewController.swift */,
 				B21027FB2930B82000A9F957 /* bannerCell.swift */,
@@ -298,6 +301,7 @@
 				B21027F0292F0FD900A9F957 /* APIEndPoint.swift in Sources */,
 				B21027F2292F113B00A9F957 /* HomeModel.swift in Sources */,
 				B2AC0811292E0FB4008B4B62 /* WishListViewController.swift in Sources */,
+				B2EE9A072932324A00EBFAA8 /* HomeTabViewController.swift in Sources */,
 				B27F5496292C6A9A00EC240B /* AppDelegate.swift in Sources */,
 				B21027ED292EF4B900A9F957 /* ProjectAPI.swift in Sources */,
 				B21027F6292F556900A9F957 /* ProjectAPIManager.swift in Sources */,
