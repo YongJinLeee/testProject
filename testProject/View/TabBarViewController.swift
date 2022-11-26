@@ -41,7 +41,8 @@ extension TabBarViewController {
         
         // 홈 탭
         let homeNavigationController = UINavigationController()
-        let homeViewContoller = HomeViewController()
+//        let homeViewContoller = HomeViewController()
+        let homeViewContoller = HomeTabViewController()
         
         homeNavigationController.addChild(homeViewContoller)
         homeNavigationController.tabBarItem.title = "홈"
