@@ -9,12 +9,13 @@ import Foundation
 
 // MARK: - Initializing
 struct Initializing: Codable {
-    let banners: [Banner]?
-    let goods: [Good]?
+    let banners: [Banner]
+    let goods: [Good]
+
 }
 
 struct Pagination: Codable {
-    let goods: [Good]?
+    let goods: [Good]
 }
 
 // MARK: - Banner
@@ -40,8 +41,24 @@ struct Good: Codable {
     }
 }
 
+
 struct HomeModel {
     
     var lastId: Int = 0
     var wishItemArr: [Good] = []
+}
+
+enum sectionModel {
+    
+    struct bannerSection {
+        var banners:  [Banner]
+    }
+    
+    struct goodsSection {
+        
+        var goods: [Good]
+    }
+    
+    case banner([bannerSection])
+    case goods([goodsSection])
 }
